@@ -5,6 +5,7 @@ public class PruebaAcceso {
         cuenta.depositar(400);
         cuenta.retirar(300);
         System.out.println(cuenta.getSaldo());
+        System.out.println(cuenta.getAgencia());
 
     }
 }

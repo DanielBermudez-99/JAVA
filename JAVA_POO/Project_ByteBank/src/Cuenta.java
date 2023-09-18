@@ -58,7 +58,11 @@ class Cuenta{
     }
 
     public void setAgencia(int agencia) {
-        this.agencia = agencia;
+        if(agencia > 0) {
+            this.agencia = agencia;
+        }else {
+            System.out.println("No esta permitido valores negativos");
+        }
     }
 
     public int getNumero() {
@@ -69,9 +73,11 @@ class Cuenta{
         this.numero = numero;
     }
     public void setTitular(Cliente cliente) {
+
         this.titular = cliente;
     }
     public Cliente getTitular() {
+
         return titular;
     }
 
