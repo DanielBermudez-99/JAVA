@@ -9,7 +9,7 @@ class Cuenta{
     public Cuenta(int agencia){
 
         if (agencia <= 0) {
-            System.out.println("No se permite 0");
+            System.out.println("No se permiten valores menores o iguales a 0");
             this.agencia = 1;
         }else {
             this.agencia = agencia;
@@ -81,4 +81,7 @@ class Cuenta{
         return titular;
     }
 
+    public static int getTotal() {
+        return total;
+    }
 }
